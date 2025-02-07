@@ -332,7 +332,7 @@ loki:
     #   chunks: FIXME
     #   ruler: FIXME
     #   admin: FIXME
-    type: s3
+    type: filesystem
     s3:
       s3: null
       endpoint: null
