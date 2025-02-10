@@ -328,11 +328,12 @@ loki:
   storage:
     # Loki requires a bucket for chunks and the ruler. GEL requires a third bucket for the admin API.
     # Please provide these values if you are using object storage.
-    # bucketNames:
-    #   chunks: FIXME
-    #   ruler: FIXME
-    #   admin: FIXME
-    type: filesystem
+    bucketNames:
+      chunks: FIXME
+      ruler: FIXME
+      admin: FIXME
+      container_name: loki
+    type: azure
     s3:
       s3: null
       endpoint: null
@@ -351,14 +352,14 @@ loki:
       requestTimeout: "0s"
       enableHttp2: true
     azure:
-      accountName: null
-      accountKey: null
-      connectionString: null
+      accountName: atdloki
+      accountKey: u8KmyIWJBYuGscfN0+rXDfbR72BtFQvX92AfoX7Nuck9OZRu7i8DXLTNVTwpsfDXPCb9xFCMq9A5+ASt5WwiRA==
+      connectionString: DefaultEndpointsProtocol=https;AccountName=atdloki;AccountKey=u8KmyIWJBYuGscfN0+rXDfbR72BtFQvX92AfoX7Nuck9OZRu7i8DXLTNVTwpsfDXPCb9xFCMq9A5+ASt5WwiRA==;EndpointSuffix=core.windows.net
       useManagedIdentity: false
       useFederatedToken: false
       userAssignedId: null
       requestTimeout: null
-      endpointSuffix: null
+      endpointSuffix: core.windows.net
       chunkDelimiter: null
     swift:
       auth_version: null
@@ -403,7 +404,7 @@ loki:
   schemaConfig: {}
   # -- a real Loki install requires a proper schemaConfig defined above this, however for testing or playing around
   # you can enable useTestSchema
-  useTestSchema: false
+  useTestSchema: true
   testSchemaConfig:
     configs:
       - from: 2024-04-01

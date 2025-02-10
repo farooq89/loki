@@ -1,10 +1,10 @@
 #!/bin/bash
 
 set -x
-kubectl create ns erpnext-stage
+kubectl create ns grafana-loki
 
-NAMESPACE="loki"
-RELEASE_NAME="loki"
+NAMESPACE="grafana-loki"
+RELEASE_NAME="grafana-loki"
 
 
 helm upgrade --install $RELEASE_NAME . --namespace $NAMESPACE
