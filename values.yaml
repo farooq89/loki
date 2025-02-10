@@ -1600,7 +1600,7 @@ backend:
   replicas: 3
   autoscaling:
     # -- Enable autoscaling for the backend.
-    enabled: false
+    enabled: true
     # -- Minimum autoscaling replicas for the backend.
     minReplicas: 3
     # -- Maximum autoscaling replicas for the backend.
