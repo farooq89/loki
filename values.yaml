@@ -333,7 +333,7 @@ loki:
       ruler: FIXME
       admin: FIXME
       container_name: loki
-    type: filesystem
+    type: azure
     s3:
       s3: null
       endpoint: null
@@ -358,7 +358,7 @@ loki:
       useManagedIdentity: false
       useFederatedToken: false
       userAssignedId: null
-      requestTimeout: null
+      requestTimeout: 0
       endpointSuffix: core.windows.net
       chunkDelimiter: null
     swift:
