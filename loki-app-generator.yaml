@@ -18,9 +18,9 @@ spec:
           prune : true
       project: default
       source:
-        repoURL: https://github.com/micromerger/atd-stage.git
+        repoURL: https://github.com/farooq89/loki.git
         targetRevision: HEAD
         path: ./
       destination:
         server: 'https://kubernetes.default.svc'
-        namespace: erpnext-stage
+        namespace: grafana-loki
