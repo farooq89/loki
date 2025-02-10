@@ -333,7 +333,7 @@ loki:
       ruler: FIXME
       admin: FIXME
       container_name: loki
-    type: azure
+    type: filesystem
     s3:
       s3: null
       endpoint: null
