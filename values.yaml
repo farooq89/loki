@@ -353,7 +353,7 @@ loki:
     azure:
       accountName: atdloki
       accountKey: u8KmyIWJBYuGscfN0+rXDfbR72BtFQvX92AfoX7Nuck9OZRu7i8DXLTNVTwpsfDXPCb9xFCMq9A5+ASt5WwiRA==
-      connectionString: DefaultEndpointsProtocol=https;AccountName=atdloki;AccountKey=u8KmyIWJBYuGscfN0+rXDfbR72BtFQvX92AfoX7Nuck9OZRu7i8DXLTNVTwpsfDXPCb9xFCMq9A5+ASt5WwiRA==;EndpointSuffix=core.windows.net
+      connectionString: BlobEndpoint=https://atdloki.blob.core.windows.net/;QueueEndpoint=https://atdloki.queue.core.windows.net/;FileEndpoint=https://atdloki.file.core.windows.net/;TableEndpoint=https://atdloki.table.core.windows.net/;SharedAccessSignature=sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2025-02-11T15:20:16Z&st=2025-02-11T07:20:16Z&spr=https&sig=VwxF82OS4hQQEt7hG7964RGfF9UprybD84wy5l2Lnok%3D
       useManagedIdentity: false
       useFederatedToken: false
       userAssignedId: null
